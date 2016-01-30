@@ -1,0 +1,72 @@
+<template name="home">
+
+		<meta name="viewport" content="width=device-width" />
+
+		<div class="fullscreen-bg">
+			<video autoplay loop poster="/bucket_video.png" id="bgvid">
+				<source src="/bucket_video.webm" type="video/webm">
+				<source src="/bucket_video.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		<div class="jumbotron top">
+
+			<div class="slogan">
+				<p>We help</p>
+				<p>people</p>
+				<p>fulfill</p>
+				<p>their</p>
+				<p>dreams</p>
+			</div>
+
+			<div class="arrow bounce"></div>
+
+		</div>
+
+		<div class="below-top">
+
+			<div class="jumbotron about-us">
+				<p>Bucket lists made by you. <span class="green">Opportunities</span> given by us. <span class="green">Let's start</span> crossing stuff off ours lists <span class="green">together</span>.</p>
+			</div>
+
+			<div class="jumbotron definition">
+				<div class="definition-header">
+					<h1>MyBucket</h1>
+					<h2>/m&#299;&#160;&#180;b&#601;k&#601;t/</h2>
+				</div>
+				<ul>
+					<li>a tool for seeking opportunities to cross items off your bucket list.</li>
+					<li>because <span class="green">we believe</span> big and little <span class="green">wishes</span> can be achieved given the opportunity.</li>
+				</ul>
+			</div>
+
+			<div class="jumbotron powered-by">
+				<div class="powered-by-header">
+					POWERED BY
+				</div>
+				<div class="technologies">
+					<div class="meteor"></div>
+					<div class="yelp"></div>
+					<div class="google"></div>
+				</div>
+			</div>
+
+			<div class="jumbotron popular">
+				<h1><span>Popular Dreams</span></h1>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-6 dream skydiving"><div class="hover">Go skydiving</div></div>
+					<div class="col-md-4 col-sm-6 dream dancing"><div class="hover">Learn to dance</div></div>
+					<div class="col-md-4 col-sm-6 dream guitar"><div class="hover">Learn to play the guitar</div></div>
+					<div class="col-md-4 col-sm-6 dream paris"><div class="hover">Visit Paris</div></div>
+					<div class="col-md-4 col-sm-6 dream chinese"><div class="hover">Learn Chinese</div></div>
+					<div class="col-md-4 col-sm-6 dream concert"><div class="hover">Go to a concert</div></div>
+				</div>
+
+				<div class="ready">
+					<p>Ready to experience your dreams? <span class="green">It's Free!</span></p>
+                    <a href="{{pathFor 'register'}}" class="profile btn btn-default">Sign up now</a>
+				</div>
+			</div>
+		</div>
+</template>

@@ -1,0 +1,36 @@
+<template name="profileItem">
+
+        <div class="profile-item">
+            <div class="profile-page-title">Your Profile</div>
+            <div class="row">
+                <div class="col-md-2 col-sm-2 item-label">First Name</div>
+                <div class="col-md-8 col-sm-10 item-value">{{first_name}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-2 item-label">Last Name</div>
+                <div class="col-md-8 col-sm-10 item-value">{{last_name}}</div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-2 col-sm-2 item-label">City</div>
+                <div class="col-md-8 col-sm-10 item-value">{{city}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-2 item-label">State</div>
+                <div class="col-md-8 col-sm-10 item-value">{{state}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-2 item-label">Country</div>
+                <div class="col-md-8 col-sm-10 item-value">{{country}}</div>
+            </div>
+        </div>
+        {{#if ownProfile}}
+            <div class="btn-profile-submit">
+                <a href="{{pathFor 'profileEdit'}}" class="btn btn-success btn-profile-submit edit-profile">
+                    Edit
+                </a>
+                <a href="{{pathFor 'wishPage'}}" class="btn btn-success btn-profile-submit edit-profile">Start filling your bucket!</a>
+            </div>
+        {{/if}}
+ </template>
+        

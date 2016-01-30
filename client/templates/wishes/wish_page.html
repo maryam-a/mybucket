@@ -1,0 +1,69 @@
+<template name="wishPage">
+  <div class="wishPage">
+
+    {{#if newUser}}
+    <div class="new-user">
+      <div class="welcome">Welcome to MyBucket,</div>
+      <div class="welcome">{{username}}!</div>
+      <div class="get-started">To get started, please create your profile.</div>
+      <div class="empty-bucket-div"><a href="{{pathFor 'profileSubmit'}}" class="empty-bucket-btn profile">Start profile</a></div>
+    </div>
+
+    {{else}}
+
+        {{#if noWishes}}
+            <div class="new-user empty-bucket-container">
+            <div class="welcome empty-bucket">Your bucket is empty!</div>
+
+            <div class="empty-bucket-div"><a href="{{pathFor 'wishSubmit'}}" class="empty-bucket-btn">Add a wish now</a></div>
+            <div class="empty-bucket-div"><a class="empty-bucket-btn or">or</a></div>
+            <div class="empty-bucket-div"><a href="{{pathFor 'explore'}}" class="explore-suggestions-btn">Explore suggestions</a></div>
+            </div>
+
+        {{else}}
+
+        <div class="wishPage-banner">
+            {{username}}'s Bucket List
+            <div class="wishes-navbar">
+                <span class="all-wishes active">
+                <a href="{{pathFor 'wishPage'}}" class="all-wishes">All Wishes</a>
+                </span>
+                <span class="completed">
+                <a href="{{pathFor 'completedWishes'}}" class="completed">Completed</a>
+                </span>
+                <span class="incomplete">
+                <a href="{{pathFor 'incompleteWishes'}}" class="incomplete">Incomplete</a>
+                </span>
+            </div>
+            </div>
+
+            <div class="wishes">
+
+            <div class="text-center">
+                <a href="{{pathFor 'wishSubmit'}}" class="add-a-wish btn-success">Add a wish</a>
+            </div>
+
+            <div class="row">
+                <!--Message when user does not have any wishes-->     
+                {{#each wishes}}                            
+                    {{#if ownWish}}
+                        <div class="text-center col-md-4 col-xs-12">
+                            <div class="wish">
+                                {{> wishItem}}
+                            </div>
+                        </div>
+                        {{/if}}               
+                {{/each}}                  
+            </div>
+
+            <div class="text-center">
+                <a href="{{pathFor 'wishSubmit'}}" class="add-a-wish btn-success">Add a wish</a>
+            </div>
+
+            </div>
+
+         {{/if}}
+    {{/if}}
+
+  </div>
+</template>

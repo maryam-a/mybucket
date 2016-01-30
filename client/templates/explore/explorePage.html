@@ -1,0 +1,72 @@
+<template name="explore">
+	<div class="explorePage">
+		<div class="explore-banner">
+			Explore your world.
+		</div>
+
+		<div class="text-center">
+			<div class="btn-group" role="group" aria-label="..." id="categories-navbar">
+				{{#each categories}}
+				<button type="button" class="btn btn-default category-button" id="btn-{{category}}" onclick="getLocation()">{{category}}</button>
+				{{/each}}
+			</div>
+		</div>
+
+		<div class="categories">
+			<div class="items click-items">
+				Click on a category above!<p id="geocode"></p> 
+			</div>
+			{{#each categories}}
+			<div class="row items" id="div-{{category}}">
+				{{#each items}}
+				<div class="col-md-4 col-xs-12 activity" style="background: url({{url}}) no-repeat center top; background-size: cover;">
+					<div class="hover explore-hover">
+						{{name}}
+						<button type="button" class="btn btn-default btn-sm add-button" id="{{key}}">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+						</button>
+					</div>
+				</div>
+				{{/each}}
+			</div>
+			{{/each}}
+		</div>
+	</div>
+    
+    <!--Getting a user's location-->
+    <div class="geolocation">
+        <script>
+        var x = document.getElementById("geocode");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(getCoordinates, showError);
+            } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function getCoordinates(position) {
+            x.innerHTML = "" + position.coords.latitude + "," +
+            position.coords.longitude + "";
+        }
+
+        function showError(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                x.innerHTML = "User denied the request for Geolocation."
+                break;
+                case error.POSITION_UNAVAILABLE:
+                x.innerHTML = "Location information is unavailable."
+                break;
+                case error.TIMEOUT:
+                x.innerHTML = "The request to get user location timed out."
+                break;
+                case error.UNKNOWN_ERROR:
+                x.innerHTML = "An unknown error occurred."
+                break;
+            }
+        }
+        </script>
+    </div>
+</template>

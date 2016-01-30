@@ -1,0 +1,48 @@
+<template name="wishItem">
+    <div class="wishItem">
+        <div class="wish-content">
+            <div class="wish-title">{{title}}</div>
+            <div class="wish-category">{{category}}</div>
+            <div class="wish-img" style= "background-image: url({{opportunity.img_url}}"></div>
+            
+            <div class="opportunity-content">
+                {{#if opportunityPresent}}
+                    <h3>Opportunity available!</h3>
+                    <a href="{{opportunity.url}}" target="_blank" class="btn btn-default">
+                        <div class="opportunity-name">{{opportunity.name}}</div>
+                        <div class="review-img"> <img src="{{opportunity.review_img}}"> based on {{opportunity.total_reviews}} <img src="/yelp-logo-xsmall.png"> reviews</div>
+                    </a>
+                {{else}}
+                    <h3>Opportunity not available yet</h3>
+                    <p>Click edit later on for a possible update!</p>
+                {{/if}}
+            </div>   
+         
+            <div class="completed">
+                <p>Completed: {{completed}}</p>
+            </div>
+        
+            <div class="blog-post">
+                {{#if blogPresent}}     
+                    <strong>Blog:</strong>
+                    <p>{{blog}}</p>               
+                {{else}}
+                    <div class="write-blog-btn"><a href="{{pathFor 'wishEdit'}}">Write about your experience</a></div>
+                {{/if}}
+            </div>
+        </div>
+        
+        <div class="edit-buttons">
+            {{#if ownWish}}       
+                <button type="button" class="btn btn-default delete" href="#">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+
+                <button type="button" class="btn btn-default edit" onclick="document.location.href='{{pathFor 'wishEdit'}}'">
+                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                </button>              
+            {{/if}} 
+         </div> 
+    </div>
+</template>
+

@@ -1,0 +1,44 @@
+<template name="profileSubmit">
+    <form class="form-horizontal submit-form">
+        <div class="profile-title col-sm-12">Your Profile</div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="first_name">First Name</label>
+            <div class="col-md-8 col-sm-10">
+                <input name="first_name" id="first_name" type="text" value=""
+                placeholder="e.g. Rob" class="form-control" required/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="last_name">Last Name</label>
+            <div class="col-md-8 col-sm-10">
+                <input name="last_name" id="last_name" type="text" value=""
+                placeholder="e.g. Miller" class="form-control"/>
+            </div>
+        </div>
+        <hr>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="city">City</label>
+            <div class="col-md-8 col-sm-10">
+                <input name="city" id="city" type="text" value=""
+                placeholder="e.g. Cambridge" class="form-control" required/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="state">State</label>
+            <div class="col-md-8 col-sm-10">
+                <input name="state" id="state" type="text" value=""
+                placeholder="e.g. MA (leave blank if not applicable)" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="country">Country</label>
+            <div class="col-md-8 col-sm-10">
+                <input name="country" id="country" type="text" value=""
+                placeholder="e.g. United States of America" class="form-control" required/>
+            </div>
+        </div>
+        <div class="btn-profile-submit">
+            <input type="submit" value="Submit" class="btn btn-success btn-profile-submit"/>
+        </div>
+    </form>
+</template>

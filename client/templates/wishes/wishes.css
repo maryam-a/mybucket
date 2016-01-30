@@ -1,0 +1,274 @@
+ /* MYBUCKET PAGE */
+
+.wishPage {
+	background-color: #eee;
+}
+
+.wishPage-banner {
+	background-color: #000;
+	text-align: center;
+	height: 300px;
+	line-height: 300px;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 30px;
+	font-family: Palatino Linotype;
+	background: url(/mybucket-banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	margin-bottom: 20px;
+	width: 100%;
+	position: relative;
+}
+
+.wishes-navbar {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	height: 50px;
+	line-height: 56px;
+}
+
+.wishes-navbar span {
+	padding: 0px 5px;
+	text-align: center;
+}
+
+.wishes-navbar span:hover, .active {
+	border-bottom: 2px solid #fff;
+}
+
+.wishes-navbar span>a {
+	text-decoration: none;
+	font-family: Helvetica;
+	font-size: 15px;
+	font-weight: 200;
+	color: #fff;
+}
+
+a.add-a-wish {
+	text-align: center;
+	width: 120px;
+	/*margin: 20px 0px 0px 2px;*/
+	padding: 10px 35px;
+	font-weight: 200;
+	font-family: Helvetica;
+	font-size: 15px;
+	text-decoration: none;
+	transition: 0.25s;
+}
+
+.wishes {
+	margin: 0px 30px;
+	padding-bottom: 75px;
+}
+
+.wish {
+	margin: 20px 2px;
+	background-color: #f8f8f8;
+	font-family: Helvetica;
+}
+
+.wish-title {
+	color: #fff;
+	font-size: 18px;
+	padding: 15px;
+	background-color: #303030;
+	transition: 0.25s;
+}
+
+.wish-category {
+	color: #fff;
+	font-size: 12px;
+	padding: 5px;
+	background-color: #404040;
+	margin-bottom: 15px;
+}
+
+.wish-img {
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	border: 4px solid #eee;
+	margin: 15px auto;
+}
+
+.opportunity-content>a {
+	border-radius: 0px;
+	border: none;
+	transition: 0.5s;
+}
+
+.opportunity-content {
+	margin: 10px 0px;
+}
+
+.blog-post {
+	padding: 10px 20px;
+	background-color: #e1e1e1;
+	margin-bottom: 10px;
+}
+
+.write-blog-btn>a {
+	color: #414141;
+	font-weight: 200;
+}
+
+.new-user {
+	height: 100vh;
+	padding: 150px 75px 250px 75px;
+	font-family: Helvetica;
+	background-color: #000;
+	background: url(/new-user-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+}
+
+@media all and (max-width: 599px) and (min-width: 320px) {
+	.new-user { padding: 75px 20px 175px 20px; }
+	.new-user { text-align: center; }
+}
+
+.welcome {
+	color: rgba(255,255,255,0.9);
+	font-size: 5em;
+	font-weight: bold;
+	line-height: 1em;
+	transition: 0.25s;
+}
+
+.welcome:hover {
+	color: rgba(255,255,255,1);
+}
+
+.get-started {
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: bolder;
+	margin: 30px 0px 40px 0px;
+}
+
+.start-profile {
+	border-radius: 0px;
+	padding: 15px 40px;
+	color: #000;
+	transition: 0.5s;
+	background-color: #3db41d;
+	font-weight: 500;
+}
+
+.start-profile:hover {
+	background-color: #43c520;
+	color: #000;
+	text-decoration: none;
+}
+
+/* WISH SUBMIT */
+
+.choose-category {
+	text-align: right;
+	font-size: 15px;
+	padding: 15px 10px;
+}
+
+@media all and (max-width: 599px) and (min-width: 320px) {
+	.choose-category { text-align: center; padding-bottom: 5px; }
+}
+
+.categories-to-choose {
+	padding: 10px;
+}
+
+label.btn.btn-default {
+	border: none;
+	transition: 0.25s;
+}
+
+label.btn.btn-default.active {
+	border: none;
+	box-shadow: none;
+}
+
+#geocode {
+	color: #fff;
+	font-size: 1px;
+}
+
+textarea#blog {
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+input.btn-wish-delete {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.empty-bucket-container {
+	height: 100vh;
+	background: url(/empty-bucket-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: cover;
+}
+
+.empty {
+	margin: 40px;
+	text-align: center;
+	font-family: Helvetica;
+}
+
+.empty-bucket {
+	margin-bottom: 70px;
+}
+
+.empty-bucket-div {
+	margin-top: 30px;
+}
+
+.empty-bucket-btn {
+	border-radius: 0px;
+	padding: 15px 56px;
+	color: #fff;
+	transition: 0.5s;
+	background-color: rgba(61,180,29,0.73);
+	font-weight: 300;
+}
+
+.empty-bucket-btn {
+	background-color: rgba(61,180,29,0.63);
+}
+
+.empty-bucket-btn:hover {
+	background-color: rgba(61,180,29,1);
+	color: #fff;
+	text-decoration: none;
+}
+
+.empty-bucket-btn.or {
+	padding: 15px 97px;
+	background-color: transparent;
+	font-weight: bolder;
+	font-size: 2em;
+}
+
+.explore-suggestions-btn {
+	border-radius: 0px;
+	padding: 15px 40px;
+	color: #fff;
+	transition: 0.5s;
+	background-color: rgba(133,90,80,0.73);
+	font-weight: 300;
+}
+
+.explore-suggestions-btn:hover {
+	background-color: rgba(133,90,80,1);
+	color: #fff;
+	text-decoration: none;
+}

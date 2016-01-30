@@ -1,0 +1,32 @@
+<template name="login">
+
+	<div class="fullscreen-bg">
+		<video autoplay loop poster="/bucket_video.png" id="bgvid">
+			<source src="/bucket_video.webm" type="video/webm">
+			<source src="/bucket_video.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<div class="jumbotron login-jumbotron">
+
+		<div class="login-form">
+			<form class="login text-center">
+				<div class="dark-gray">Login to MyBucket</div>
+				<div class="login-form-item"><span class="dark-gray">Username or email</span><input type="text" class="form-control" name="loginInfo" required></div>
+				<div class="login-form-item"><span class="dark-gray">Password</span><input type="password" class="form-control" name="password" required></div>
+				<div class="login-form-item" id="tryAgain"></div>
+
+				<div class="forgot-password"><a class="forgot-password" href="{{pathFor 'forgotPassword'}}">Forgot Password?</a></div>
+
+				<div class="btn-profile-submit">
+					<input type="submit" value="Login" class="btn btn-success btn-profile-submit"/>
+				</div>
+
+				<div>
+					<a class="no-account" href="{{pathFor 'register'}}">Don't have an account? Sign up!</a>
+				</div>
+			</form>
+
+		</div>
+	</div>
+</template>

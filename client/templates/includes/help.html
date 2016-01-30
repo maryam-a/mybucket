@@ -1,0 +1,65 @@
+<template name="help">
+	<div class="jumbotron help">
+		<div class="help-banner">
+			We're here to help.
+		</div>
+
+		<div id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="wishHeading">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#wishCollapse" aria-expanded="false" aria-controls="wishCollapse">
+							Adding, editing or deleting wishes
+						</a>
+					</h4>
+				</div>
+				<div id="wishCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="wishHeading">
+					<strong>Adding Wishes</strong><br>
+                    There are two ways of adding wishes to your bucket. When you login, you will be redirected to your bucket. Simply click "Add a wish" and fill the form. Then you're good to go!<br>                    
+                    Don't know where to start? Click "Explore" to see some of our staff picks for inspiration!<br>
+                    <br>
+                    <strong>Editing Wishes</strong><br>
+                    To edit a wish, click the pencil image on a wish in your bucket. You can fine tune your wish, change the category, indicate if you completed the wish and write about your experience here.<br>
+                    <br>
+                    <strong>Deleting Wishes</strong><br>
+                    If for some reason you feel compelled to delete your wish (although we think all of your wishes are awesome!), you can click the X image on the wish in your bucket.<br>
+                    You can also delete your wish from the edit page.
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="locationHeading">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#locationCollapse" aria-expanded="false" aria-controls="locationCollapse">
+							Changing your location
+						</a>
+					</h4>
+				</div>
+				<div id="locationCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="locationHeading">
+					Moved recently? Or perhaps you're on vacation in a different country. Either way, you can change your location by selecting the "Your Profile" option in the dropdown menu after clicking your name in the top right corner.
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="browserHeading">
+					<h4 class="panel-title">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#browserCollapse" aria-expanded="false" aria-controls="browserCollapse">
+							Browser compatibility
+						</a>
+					</h4>
+				</div>
+				<div id="browserCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="browserHeading">
+					To get the full experience of MyBucket, we recommend that you use Google Chrome or Mozilla Firefox.
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="contactHeading">
+					<h4 class="panel-title">
+						<a class="collapsed" data-parent="#accordion" href="mailto:mybucket@mit.edu?subject=[MyBucket]">
+							Contact us
+						</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</template>

@@ -1,0 +1,1 @@
+Yelp = Npm.require('yelp');

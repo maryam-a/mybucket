@@ -1,0 +1,190 @@
+/* LOGGED OUT NAVBAR */
+
+#logged-out-navbar {
+	border-radius: 0px;
+	background-color: transparent;
+	border: transparent;
+	padding: 10px;
+	padding-bottom: 0px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+a#logged-out-title {
+	color: #fff;
+	border-left: none;
+}
+
+a#logged-in-logo.navbar-brand {
+	padding: 0px 10px 0px 30px;
+}
+
+a#logged-in-logo img {
+	width: 32px;
+	height: 42px;
+	margin-bottom: 20px;
+}
+
+#logged-in-logo:hover {
+	border-left: none;
+}
+
+a#logged-out-title:hover {
+	background-color: transparent;
+}
+
+a#logged-out-title.navbar-brand {
+	padding-top: 15px;
+}
+
+#logged-out-title {
+	border-right: transparent;
+}
+
+#nav-profile, #nav-add-wish, #nav-title, #login-buttons-open-change-password, #login-buttons-logout,
+#login-username-or-email-label, #login-password-label {
+	font-family: Helvetica;
+	font-weight: normal;
+	color: #fff;
+}
+
+#logged-out-profile:hover, #logged-in-add-wish:hover, #login-buttons-open-change-password:hover, 
+#login-buttons-logout:hover, #login-username-or-email-label:hover, #login-password-label:hover,
+#login-buttons a:hover, .accounts-dialog a:hover, 
+div#login-buttons-password.login-button.login-button-form-submit:hover {
+	color: #3db41d;
+}
+
+#login-sign-in-link {
+	padding: 10px;
+	font-size: 18px;
+}
+
+#login-sign-in-link:hover {
+	color: #fff;
+}
+
+#nav-title:hover {
+	color: #ddd;
+}
+
+#overlay-back {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #000;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	z-index: 20;
+	/*display: none;*/
+}
+
+#overlay {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 25;
+	/*display: none;*/
+} 
+
+#wrapper {
+    align-items:center;
+    display:flex;
+    /* 100% minus height of both header and footer */
+    height:calc(100% - (70px + 70px));
+}
+
+#content {
+    background:white;
+    margin:auto;
+    width:250px;
+}
+
+/* LOGGED IN NAVBAR */
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:visited, 
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:visited, .navbar-default .navbar-nav>li>a:active {
+	font-family: Helvetica;
+	font-size: 15px;
+	font-weight: 100;
+}
+
+.navbar-default .navbar-brand {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.navbar-brand {
+	padding: 15px 15px 0px 15px;
+}
+
+.navbar-brand>img {
+	padding-top: 10px;
+	height: 30px;
+	width: auto;
+}
+
+.dropdown-menu {
+	font-family: Helvetica;
+	color: #616161;
+	font-weight: 100;
+	font-size: 15px;
+	background-color: #fff;
+	border-radius: 0px;
+}
+
+#logged-in-navbar {
+	background-color: rgb(255,255,255);
+	padding: 0;
+}
+
+#logged-in-logo {
+	padding-left: 35px;
+	border-right: 1px solid #e1e1e1;
+}
+
+button.navbar-toggle.collapsed, button.navbar-toggle {
+	border-radius: 0px;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand:hover {
+	border-left: 1px solid #e1e1e1;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-brand:hover {
+	color: #616161;
+	background-color: #e1e1e1;
+}
+
+a.login-button:hover, a.login-button:focus {
+	background-color: rgba(0,0,0,0.2) !important; 
+}
+
+div.container-fluid#logged-in-container {
+	border-bottom: 1px solid #e1e1e1;
+	padding-left: 0px;
+}
+
+div#logged-out-collapse>ul>li>a.login-button {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	border-left: none;
+}
+
+nav#logged-out-navbar.navbar.navbar-default {
+	padding: 0px;
+}
+

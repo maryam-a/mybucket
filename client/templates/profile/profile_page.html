@@ -1,0 +1,19 @@
+<template name="profilePage">
+  <div class="profile-page">
+      {{#if profileExists}}
+        {{#each profiles}}
+            {{#if ownProfile}}
+                    {{> profileItem}}
+            {{/if}}
+        {{/each}}
+      {{else}}
+
+        <div class="new-user">
+          <div class="welcome">You don't have a profile yet,</div>
+          <div class="welcome">{{username}}!</div>
+          <div class="get-started">To get started, please create one now!</div>
+          <div class="empty-bucket-div"><a href="{{pathFor 'profileSubmit'}}" class="empty-bucket-btn profile">Start profile</a></div>
+        </div>
+      {{/if}}
+  </div>
+</template>

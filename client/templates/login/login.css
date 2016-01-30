@@ -1,0 +1,52 @@
+div.jumbotron.login-jumbotron {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	background-color: transparent;
+	padding-bottom: 150px;
+}
+
+div.login-form {
+	background-color: #fff;
+	width: 375px;
+	margin: 0 auto;
+	padding: 30px 30px 50px 30px;
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+form.login-form {
+	margin: 0 auto;
+}
+
+div.login-form-item, div.login-form-submit {
+	margin-bottom: 20px;
+	font-family: Helvetica;
+}
+
+a.forgot-password, a.no-account {
+	font-family: Helvetica;
+	font-size: 15px;
+	color: rgba(31, 75, 114, 0.8);
+	font-weight: 300;
+	transition: 0.25s;
+	margin-bottom: 20px;
+}
+
+span.dark-gray, div.dark-gray {
+	color: #3b3b3b;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+div.dark-gray {
+	font-family: Helvetica;
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+div.forgot-password {
+	margin-bottom: 15px;
+}

@@ -1,0 +1,73 @@
+<head>
+  <meta charset="utf-8">
+  <title>MyBucket - Bucket lists made by you. Opportunities given by us</title>
+  <meta name="description" content="A tool for seeking opportunities to cross items off your bucket list. MyBucket is a 6.148 Project and powered by Meteor.">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, minimal-ui, maximum-scale=1, minimum-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="bucket.png?v1" sizes="16x16 32x32 64x64">
+  <link rel="apple-touch-icon" sizes="120x120" href="bucket.png">
+</head>
+
+
+<template name="loggedOutHeader"> 
+  <nav class="navbar navbar-default" id="logged-out-navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#logged-out-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <span class="logo"><img src="/bucket-white.png"></span>
+        <a class="navbar-brand" id="logged-out-title" href="{{pathFor 'home'}}">MYBUCKET</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="logged-out-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="login-li"><a class="login-button" href="{{pathFor 'login'}}">login</a></li>
+          <li class="login-li"><a class="login-button" href="{{pathFor 'register'}}">register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</template>
+
+<template name="loggedInHeader">
+  <nav class="navbar navbar-default navbar-fixed-top top-navbar" id="logged-in-navbar">
+    <div class="container-fluid" id="logged-in-container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#logged-in-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="logged-in-logo" href="{{pathFor 'wishPage'}}">
+          <img class="logo" src="/bucket.png">
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="logged-in-collapse">
+        <ul class="nav navbar-nav navbar-right">
+
+          <li><a href="{{pathFor 'wishPage'}}">MyBucket</a></li>
+          <li><a href="{{pathFor 'explore'}}">Explore</a></li>
+
+          <li class="dropdown">
+            <a href="#" id="logged-in-user" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{username}} <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="{{pathFor 'wishPage'}}">my bucket</a></li>
+              <li><a href="{{pathFor 'wishSubmit'}}">add a new wish</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="{{pathFor 'profilePage'}}">your profile</a></li>
+              <li><a href="{{pathFor 'help'}}">help</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#" class="logout">logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</template>  
